@@ -36,3 +36,30 @@
     transform: rotate(360deg);
   }
 }
+
+.bg-overlay {
+  background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url("/assets/images/hazy.jpg");
+  background-size: 100%;
+  color: #fff;
+  width: auto;
+  padding-top: 50px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+}
+
+.jumbotron {
+  background-color: #03719C;
+  color: white;
+}
+
+.site-footer {
+  margin-top: 0px;
+  background-color: #0F9B8E;
+  padding: 20px 0;
+}
+
+#header-nav {
+  background-color: #535857;
+  color: white;
+}
