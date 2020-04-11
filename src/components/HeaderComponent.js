@@ -21,12 +21,12 @@ const Header = (props) => {
             <React.Fragment>
                 <Jumbotron fluid className="mb-0">
                     <Container fluid>
-                        <h1 className="display-3">Jake Genera</h1>
-                        <p className="lead">"The only proof he needed for the existence of God was music." - <em>Kurt Vonnegut</em></p>
+                        <h1 className="name display-1">Jake Genera</h1>
+                        <p>"The only proof he needed for the existence of God was <span className="lead"><em>music.</em></span>" - <em>Kurt Vonnegut</em></p>
                     </Container>
                 </Jumbotron>
                     <Navbar sticky light expand="md" id="header-nav">
-                        <NavbarBrand href="/">..J.G..</NavbarBrand>
+                        <NavbarBrand href="/" className="name"><strong>J.G.</strong></NavbarBrand>
                         <NavbarToggler onClick={toggle} />
                         <Collapse isOpen={isOpen} navbar>
                             <Nav navbar>
@@ -36,18 +36,13 @@ const Header = (props) => {
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink className="nav-link" to="/about">
-                                        <i className="fa fa-music fa-lg" /> About
+                                    <NavLink className="nav-link" to="/shows">
+                                        <i className="fa fa-music fa-lg" /> Tour Dates
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
                                     <NavLink className="nav-link" to="/newsfeed">
                                         <i className="fa fa-file fa-lg" /> News
-                                    </NavLink>
-                                </NavItem>
-                                <NavItem>
-                                    <NavLink className="nav-link" to="/contact">
-                                        <i className="fa fa-address-card fa-lg" /> Contact
                                     </NavLink>
                                 </NavItem>
                             </Nav>
